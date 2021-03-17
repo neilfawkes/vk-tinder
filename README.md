@@ -1,13 +1,13 @@
 # VK Tinder
 
-С помощью данного скрипта можно находить новых людей в VK.
+This script helps finding new people at vk.com.
 
-На вход программа принимает токен для доступа к VK (если токена нет, есть возможность его получить с помощью данного скрипта) и параметры для поиска (страна, город, пол, диапазон возраста).
+The input is VK access token (if the user doesn't have one the script offers the opportunity to obtain it) and search parameters (country, city, gender, age).
 
-На выходе пользователь получает json-файл со списком из 10 пользователей, у каждого из которых есть ссылки на 3 фотографии профиля с наибольшим количеством лайков (в выборку попадают только пользователи с загруженными фотографиями профиля; при меньшем количестве фотографий будут предоставлены ссылки на них).
-Полученные данные хранятся в базе данных Mongo, есть возможность при желании "пролистать" на следующие 10 результатов поиска и далее, при наличии.
+The output is written to json-file and contains the list of 10 users, each of them has links to top3 photos by likes.
+The obtained data is stored in Mongo DB and the user has an opportunity to search for another 10 results.
 
-Код выполнен с использованием VK API и библиотек:
+The script is written using VK API and following libraries:
 - requests;
 - time;
 - json;
@@ -15,4 +15,4 @@
 - urllib.parse;
 - pymongo.
 
-Код соответствует PEP8.
+The code was written according to PEP8.
